@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.skyscanner.backpack.card.BpkCardView
+        android:id="@+id/flightCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:cornerStyle="large"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <net.skyscanner.backpack.text.BpkText
+                android:id="@+id/flightNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flight No: AI202"
+                style="@style/bpkTextHeading1" />
+
+            <net.skyscanner.backpack.text.BpkText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Departure: BOM - 10:30 AM"
+                style="@style/bpkTextHeading3" />
+
+            <net.skyscanner.backpack.text.BpkText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrival: DEL - 12:45 PM"
+                style="@style/bpkTextHeading3" />
+        </LinearLayout>
+    </net.skyscanner.backpack.card.BpkCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
